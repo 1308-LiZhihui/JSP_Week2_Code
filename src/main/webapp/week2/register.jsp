@@ -36,13 +36,13 @@
     <title>New User Registration</title>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/hello" align="center" name="form1" method="post" onsubmit="return on_submit()">
+<form action="${pageContext.request.contextPath}/register" align="center" name="form1" method="post" onsubmit="return on_submit()">
     <h2>New User Registration!</h2><br>
     <input type="text"  name="Username"id="1" placeholder="Username" style="background-color: antiquewhite;width: 200px"><br>
-    <input type="text" name="password" id="2" placeholder="password" style="background-color: antiquewhite;width: 200px"><br>
+    <input type="password" name="password" id="2" placeholder="password" style="background-color: antiquewhite;width: 200px"><br>
     <input type="text" name="Email" id="3" placeholder=Email style="background-color: antiquewhite;width: 200px"><br>
-    <strong>Gender</strong> <input type="radio" name="gender" value="男">Male
-           <input type="radio" name="gender" value="女">Female<br>
+    <strong>Gender</strong> <input type="radio" name="gender" value="male">Male
+           <input type="radio" name="gender" value="female">Female<br>
     <input type="date" name="Birthdate" placeholder="Date of birth(yyyy-mm-dd)" style="background-color: antiquewhite;width: 200px"><br>
     <input type="submit" value="Register" style="background-color: chartreuse">
 </form>
