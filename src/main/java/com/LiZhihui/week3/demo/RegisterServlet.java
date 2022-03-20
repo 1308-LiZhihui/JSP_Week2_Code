@@ -48,7 +48,6 @@ public class RegisterServlet extends HttpServlet {
 
     }
 
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("Username");
@@ -86,8 +85,7 @@ public class RegisterServlet extends HttpServlet {
         writer.println("<HEAD>");
         writer.println("</HEAD>");
         writer.println("<BODY>");
-//        writer.println("<table border='5'><tr><th>ID</th><th>UserName</th><th>Password</th><th>Email</th><th>Gender</th><th>BirthDate</th></tr>");
-       String sql2 ="select * from usertable";
+        String sql2 ="select * from usertable";
         writer.println("<table border='1'>");
         writer.println("<tr>");
         writer.println("<th>"+"ID"+"</th>");
@@ -114,10 +112,8 @@ public class RegisterServlet extends HttpServlet {
             e.printStackTrace();
         }
         writer.println("</table>");
-//        writer.println("/table");
         writer.println("</BODY>");
         writer.println("</HTML>");
-
         writer.close();
     }
 }
