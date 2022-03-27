@@ -34,7 +34,7 @@
     </servlet>-->
     <!--   <servlet>
            <servlet-name>ConfigDemoServlet</servlet-name>
-           <servlet-class>com.LiZhihui.week4.ConfigDemoServlet</servlet-class>
+           <servlet-class>ConfigDemoServlet</servlet-class>
            <init-param>
                <param-name>name</param-name>
                <param-value>LiZhihui</param-value>
@@ -46,7 +46,7 @@
     </servlet>-->
     <!--<servlet>
         <servlet-name>JDBCemoServlet</servlet-name>
-        <servlet-class>com.LiZhihui.week4.JDBCemoServlet</servlet-class>
+        <servlet-class>JDBCemoServlet</servlet-class>
         <init-param>
             <param-name>driver</param-name>
             <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
@@ -86,8 +86,8 @@
         <servlet-name>JDBCemoServlet</servlet-name>
         <url-pattern>/jdbc</url-pattern>
     </servlet-mapping>-->
-    <welcome-file-list>
+<!--    <welcome-file-list>
   <welcome-file>week2/register.jsp</welcome-file>
-    </welcome-file-list>
+    </welcome-file-list>-->
 
 </web-app>
