@@ -21,16 +21,16 @@
     </context-param>
     <servlet>
         <servlet-name>anyname</servlet-name>
-        <servlet-class>com.LiZhihui.week2.demo.HelloWorldServlet</servlet-class>
+        <servlet-class>com.LiZhihui.week2.HelloWorldServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>lifecycleservlet</servlet-name>
-        <servlet-class>com.LiZhihui.week3.demo.LifeCycleServlet</servlet-class>
+        <servlet-class>com.LiZhihui.week3.LifeCycleServlet</servlet-class>
     </servlet>
 <!--
     <servlet>
         <servlet-name>RegisterServlet</servlet-name>
-        <servlet-class>com.LiZhihui.week3.demo.RegisterServlet</servlet-class>
+        <servlet-class>RegisterServlet</servlet-class>
     </servlet>-->
     <!--   <servlet>
            <servlet-name>ConfigDemoServlet</servlet-name>

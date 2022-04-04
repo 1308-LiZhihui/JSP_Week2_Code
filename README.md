@@ -34,3 +34,19 @@ Name:LiZhihui
 ![img.png](images/img12.png)
 
 ![img.png](images/img13.png)
+
+# week6 exercise
+### exercise1
+![img.png](images/img14.png)
+
+![img.png](images/img15.png)
+
+![img.png](images/img16.png)
+
+### exercise2
+![img.png](images/img17.png)
+
+![img.png](images/img18.png)
+
+![img.png](images/img19.png)
+
