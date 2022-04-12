@@ -50,3 +50,14 @@ Name:LiZhihui
 
 ![img.png](images/img19.png)
 
+# week7 exercise
+### exercise1 home
+![img.png](images/img20.png)
+
+### exercise2 login
+![img.png](images/img21.png)
+
+![img.png](images/img22.png)
+
+![img.png](images/img23.png)
+

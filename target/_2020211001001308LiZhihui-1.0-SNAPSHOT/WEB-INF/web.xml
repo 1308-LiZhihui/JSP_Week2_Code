@@ -89,5 +89,8 @@
 <!--    <welcome-file-list>
   <welcome-file>week2/register.jsp</welcome-file>
     </welcome-file-list>-->
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
 
 </web-app>
