@@ -79,5 +79,19 @@ Name:LiZhihui
 
 ![img.png](images/img29.png)
 
+# week9 exercise
+### exercise1 about filter
+![img.png](images/img31.png)
+
+![img.png](images/img32.png)
+
+![img.png](images/img33.png)
+
+![img.png](images/img34.png)
+
+### exercise2 about database
+![img.png](images/img35.png)
+
+
 
 

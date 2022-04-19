@@ -14,7 +14,7 @@
           <element id="module-output" name="2020211001001308LiZhihui" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:mssql-jdbc:8.4.1.jre8" />
+          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:mssql-jdbc:10.2.0.jre8" />
           <element id="library" level="project" name="Maven: javax.servlet:jsp-api:2.0" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.4" />
         </element>
