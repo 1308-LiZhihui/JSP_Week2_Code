@@ -61,3 +61,23 @@ Name:LiZhihui
 
 ![img.png](images/img23.png)
 
+# week8 exercise
+![img.png](images/img30.png)
+### exercise1 login
+![img.png](images/img24.png)
+
+![img.png](images/img25.png)
+
+### exercise2 Remember Me
+![img.png](images/img26.png)
+
+### exercise3 Logout
+![img.png](images/img27.png)
+
+### exercise4 Update User
+![img.png](images/img28.png)
+
+![img.png](images/img29.png)
+
+
+

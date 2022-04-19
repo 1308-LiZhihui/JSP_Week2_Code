@@ -2,6 +2,7 @@ package com.LiZhihui.week5;
 
 import com.LiZhihui.dao.UserDao;
 import com.LiZhihui.model.User;
+import com.sun.javaws.progress.PreloaderPostEventListener;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -44,7 +45,24 @@ public class LoginServlet extends HttpServlet {
         try {
             User user= userDao.findByUsernamePassword(con,username,password);
             if (user!=null){
-                request.setAttribute("user",user);
+//                Cookie c=new Cookie("sessionid",""+user.getId());
+//                c.setMaxAge(10*60);response.addCookie(c);
+                String rememberMe=request.getParameter("rememberMe");
+                if(rememberMe!=null && rememberMe.equals("1")){
+                    Cookie usernameCookie=new Cookie("cUsername",user.getUsername());
+                    Cookie passwordCookie=new Cookie("cPassword",user.getPassword());
+                    Cookie rememberMeCookie=new Cookie("cRememberMe",rememberMe);
+                    usernameCookie.setMaxAge(5);
+                    passwordCookie.setMaxAge(5);
+                    rememberMeCookie.setMaxAge(5);
+                    response.addCookie(usernameCookie);
+                    response.addCookie(passwordCookie);
+                    response.addCookie(rememberMeCookie);
+                }
+                HttpSession session=request.getSession();
+                System.out.println("session id-->"+session.getId());
+                session.setMaxInactiveInterval(10);
+                session.setAttribute("user",user);
                 request.getRequestDispatcher("WEB-INF/views/userInfo.jsp").forward(request,response);
 
             }else{
