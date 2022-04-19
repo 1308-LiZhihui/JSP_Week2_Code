@@ -7,15 +7,23 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="header.jsp"%>
+<%--<%--%>
+<%--        Cookie[] allCookies=request.getCookies();--%>
+<%--        for(Cookie c:allCookies){--%>
+<%--                out.println("<br/>"+c.getName()+"---"+c.getValue());--%>
+
+<%--        }--%>
+<%--%>--%>
 <h1>
     User Info
 </h1>
-<%User user=(User)request.getAttribute("user");%>
+<%User u=(User)session .getAttribute("user");%>
 <table border="6">
-        <tr><td>Username:</td><td><%=user.getUsername()%></td></tr>
-        <tr><td>Password:</td><td><%=user.getPassword()%></td></tr>
-        <tr><td>Email:</td><td><%=user.getEmail()%></td></tr>
-        <tr><td>Gender:</td><td><%=user.getGender()%></td></tr>
-        <tr><td>Birth Date:</td><td><%=user.getBirthdate()%></td></tr>
+        <tr><td>Username:</td><td><%=u.getUsername()%></td></tr>
+        <tr><td>Password:</td><td><%=u.getPassword()%></td></tr>
+        <tr><td>Email:</td><td><%=u.getEmail()%></td></tr>
+        <tr><td>Gender:</td><td><%=u.getGender()%></td></tr>
+        <tr><td>Birth Date:</td><td><%=u.getBirthdate()%></td></tr>
 </table>
+<a href="updateUser">Update User</a>
 <%@include file="footer.jsp"%>
