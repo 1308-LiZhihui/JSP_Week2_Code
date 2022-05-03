@@ -46,16 +46,15 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.getRequestDispatcher("WEB-INF/views/register.jsp").forward(request,response);
     }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String username = request.getParameter("Username");
+        String username = request.getParameter("username");
         String password = request.getParameter("password");
-        String Email = request.getParameter("Email");
+        String Email = request.getParameter("email");
         String gender = request.getParameter("gender");
-        String Birthdate = request.getParameter("Birthdate");
+        String Birthdate = request.getParameter("birthdate");
         String sql ="select max(id) min from usertable";
         int id = 0;
         try {
@@ -78,7 +77,7 @@ public class RegisterServlet extends HttpServlet {
             preparedStatement.setString(5, gender);
             preparedStatement.setDate(6, Date.valueOf(Birthdate));
             preparedStatement.executeUpdate();
-            response.sendRedirect("Login.jsp");
+            response.sendRedirect("login");
         } catch (SQLException e) {
             e.printStackTrace();
         }

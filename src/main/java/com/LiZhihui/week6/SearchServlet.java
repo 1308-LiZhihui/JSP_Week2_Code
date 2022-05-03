@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.Objects;
 
-@WebServlet(name = "SearchServlet",value="/Search")
+@WebServlet(name = "SearchServlet",value="/search")
 public class SearchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

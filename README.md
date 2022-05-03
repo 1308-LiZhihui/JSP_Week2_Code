@@ -92,6 +92,29 @@ Name:LiZhihui
 ### exercise2 about database
 ![img.png](images/img35.png)
 
+# week10 exercise
+![img.png](images/img36.png)
+
+###home
+![img.png](images/img37.png)
+
+###register
+![img.png](images/img38.png)
+ 
+![img.png](images/img39.png)
+
+![img.png](images/img40.png)
+
+###logout
+![img.png](images/img41.png)
+
+###search
+![img.png](images/img42.png)
+
+###admin
+![img.png](images/img43.png)
+
+
 
 
 
