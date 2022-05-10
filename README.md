@@ -114,7 +114,26 @@ Name:LiZhihui
 ###admin
 ![img.png](images/img43.png)
 
+# week11 exercise
+### Demo1
+![img.png](images/img44.png)
 
+![img.png](images/img45.png)
 
+### Demo2
+![img.png](images/img46.png)
 
+![img.png](images/img47.png)
+
+### Demo3
+![img.png](images/img48.png)
+
+![img.png](images/img49.png)
+
+### exercise
+![img.png](images/img50.png)
+
+![img.png](images/img51.png)
+
+![img.png](images/img52.png)
 

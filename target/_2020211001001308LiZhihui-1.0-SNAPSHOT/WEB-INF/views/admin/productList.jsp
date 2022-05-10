@@ -26,7 +26,7 @@
 					<thead>
 					<tr class="cart_menu">
 							<td colspan="5">&nbsp;</td>
-							<td  colspan="1">  <a class="btn btn-default update" id="buttonSubmit" href="<%=basePath %>admin/addProduct">Add Product</a></td>
+							<td  colspan="1">  <a class="btn btn-default update" id="buttonSubmit1" href="<%=basePath %>admin/addProduct">Add Product</a></td>
 							
 						</tr>
 						<tr class="cart_menu">
