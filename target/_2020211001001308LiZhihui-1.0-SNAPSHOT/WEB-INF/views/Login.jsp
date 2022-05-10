@@ -15,7 +15,7 @@
     Cookie[] cookies=request.getCookies();
     String username="";
     String password="";
-    String rememberMe="";
+    String rememberMe="1";
     if (cookies!=null){
         for (Cookie cookie:cookies){
             if (cookie.getName().equals("cUsername")){
@@ -37,7 +37,7 @@
    <input type="password" name="password" placeholder="password" value="<%=password%>">
     <br/>
     <span>
-		<input type="checkbox" class="checkbox" name="remember" value="1" <%="1".equals(rememberMe)? "checked":""%>/> Keep me signed in
+		<input type="checkbox" class="checkbox" name="rememberMe" value="1" <%="1".equals(rememberMe)? "checked":""%>/> Keep me signed in
    </span>
     <button type="submit" class="btn btn-default">Login</button>
 </form>	
