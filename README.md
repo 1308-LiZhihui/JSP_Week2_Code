@@ -137,3 +137,24 @@ Name:LiZhihui
 
 ![img.png](images/img52.png)
 
+# week12 exercise
+### exercise1
+![img.png](images/img53.png)
+
+about category
+![img.png](images/img54.png)
+
+about image
+![img.png](images/img55.png)
+
+### exercise2
+Shop-->Products
+![img.png](images/img56.png)
+
+Shop-->ProductByCategoryId
+![img.png](images/img57.png)
+
+Product Details
+![img.png](images/img58.png)
+
+

@@ -36,5 +36,6 @@
     <orderEntry type="library" name="Maven: com.microsoft.sqlserver:mssql-jdbc:10.2.0.jre8" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jsp-api:2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.4" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
   </component>
 </module>

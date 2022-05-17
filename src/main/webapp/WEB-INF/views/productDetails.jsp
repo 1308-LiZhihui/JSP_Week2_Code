@@ -1,5 +1,6 @@
 
 	<%@include file="header.jsp" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	<section>
 		<div class="container">
 			<div class="row">
@@ -9,44 +10,14 @@
 						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							
 							<!-- loop_start -->
+							<c:forEach var="c" items="${categoryList}">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="<%=basePath %>shop?categoryId=${c.categoryId}">${c.categoryName}</a></h4>
+								</div>
+							</div>
+							</c:forEach>
 							
-							
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="<%=basePath %>shop?categoryId=1?">Category Type</a></h4>
-								</div>
-							</div>
-							<!-- loop_end -->
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Fashion</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Households</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Interiors</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Clothing</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Bags</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Shoes</a></h4>
-								</div>
-							</div>
 							<!-- loop_end -->
 						</div><!--/category-products-->
 					
@@ -70,7 +41,7 @@
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="<%=basePath %>images/product-details/1.jpg" alt="" />
+								<img src="<%=basePath %>getImg?id=${p.productId}" alt="" />
 							</div>
 							<div id="similar-product" class="carousel slide" data-ride="carousel">
 								
@@ -109,15 +80,15 @@
 						<div class="col-sm-7">
 							<div class="product-information"><!--/product-information-->
 								<img src="images/product-details/new.jpg" class="newarrival" alt="" />
-								<h2>ProductName</h2>
-								<p>Web ID: ProductID</p>
+								<h2>${p.productName}</h2>
+								<p>Web ID:${p.productId} </p>
 								<img src="images/product-details/rating.png" alt="" /><!-- picture -->
 								<p></p>
-									<p>RMB price</p>
+									<p>${p.price}</p>
 									<form action="<%=basePath %>cart">
-									<label>Quantity:</label>
-									<input type="text" value="1" name="quantity"/>
-									<input type="hidden" value="1" name="productId"/>
+									<!-- <label>Quantity:</label>
+									<input type="text"  name="quantity"/> -->
+									<input type="hidden" value="${p.productId}" name="productId"/>
 									<input type="hidden" value="add" name="action"/>
 									<div><br/>
 									<button type="submit" class="btn btn-fefault cart">
@@ -142,7 +113,7 @@
 						<div class="tab-pane fade active in" id="details" >
 								<div class="col-sm-12">
 									
-									<p>productDescription ---Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									<p>${p.productDescription}</p>
 								
 								</div>
 							</div>
@@ -153,5 +124,6 @@
 				</div>
 			</div>
 	</section>
+	<br/><br/>
 <%@include file="footer.jsp" %>
 	

@@ -35,13 +35,13 @@ public class AddProductServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Category category = new Category();
         try {
             List<Category> categoryList=category.findAllCategory(con);
-            req.setAttribute("categoryList",categoryList);
+            request.setAttribute("categoryList",categoryList);
             String path = "/WEB-INF/views/admin/addProduct.jsp";
-            req.getRequestDispatcher(path).forward(req,resp);
+            request.getRequestDispatcher(path).forward(request,response);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -49,13 +49,13 @@ public class AddProductServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String productName = req.getParameter("productName");
-        Double price = req.getParameter("price")!=null?Double.parseDouble(req.getParameter("price")):0.0;
-        int categoryId =req.getParameter("categoryId")!=null?Integer.parseInt(req.getParameter("categoryId")):8;
-        String productDescription = req.getParameter("productDescription");
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String productName = request.getParameter("productName");
+        Double price = request.getParameter("price")!=null?Double.parseDouble(request.getParameter("price")):0.0;
+        int categoryId =request.getParameter("categoryId")!=null?Integer.parseInt(request.getParameter("categoryId")):8;
+        String productDescription = request.getParameter("productDescription");
         InputStream inputStream = null;
-        Part filePart = req.getPart("picture");
+        Part filePart = request.getPart("picture");
         if(filePart!=null){
             //print out some information for debugging
             System.out.println("file name:"+filePart.getName()+"size"+filePart.getSize()+"fileType"+filePart.getContentType());
