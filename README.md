@@ -157,4 +157,15 @@ Shop-->ProductByCategoryId
 Product Details
 ![img.png](images/img58.png)
 
+# week13 exercise
+### exercise1
+![img.png](images/img59.png)
+
+![img.png](images/img60.png)
+
+![img.png](images/img61.png)
+
+### exercise2
+![img.png](images/img62.png)
+
 
