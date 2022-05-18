@@ -69,9 +69,10 @@
         <servlet-name>anyname</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+<!--    修改-->
     <servlet-mapping>
         <servlet-name>lifecycleservlet</servlet-name>
-        <url-pattern>/life</url-pattern>
+        <url-pattern>/Life</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
@@ -116,5 +117,14 @@
         <filter-name>AuthFilter</filter-name>
         <url-pattern>/hello-servlet</url-pattern>
     </filter-mapping>
+<!--    Lab-1-->
+    <servlet>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <servlet-class>com.LiZhihui.Lab1.LifeCycleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <url-pattern>/life</url-pattern>
+    </servlet-mapping>
 
 </web-app>
