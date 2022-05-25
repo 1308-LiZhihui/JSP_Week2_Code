@@ -128,11 +128,11 @@
     </servlet-mapping>
 <!--    Lab-2-->
     <filter>
-        <filter-name>YourName</filter-name>
-        <filter-class>com.LiZhihui.Lab2.YourNameFilter</filter-class>
+        <filter-name>LiZhihui</filter-name>
+        <filter-class>com.LiZhihui.Lab2.LiZhihuiFilter</filter-class>
     </filter>
     <filter-mapping>
-        <filter-name>YourName</filter-name>
+        <filter-name>LiZhihui</filter-name>
         <url-pattern>/Lab2/welcome.jsp</url-pattern>
     </filter-mapping>
 

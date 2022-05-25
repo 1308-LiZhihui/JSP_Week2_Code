@@ -4,8 +4,8 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
-@WebFilter(filterName = "YourNameFilter")
-public class YourNameFilter implements Filter {
+@WebFilter(filterName = "LiZhihuiFilter")
+public class LiZhihuiFilter implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }
 
@@ -14,8 +14,8 @@ public class YourNameFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
-        System.out.println("YourNameFilter-->before chain");
+        System.out.println("LiZhihuiFilter-->before chain");
         chain.doFilter(request, response);
-        System.out.println("YourNameFilter-->after chain");
+        System.out.println("LiZhihuiFilter-->after chain");
     }
 }
