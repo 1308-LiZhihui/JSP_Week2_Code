@@ -126,5 +126,14 @@
         <servlet-name>LifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
     </servlet-mapping>
+<!--    Lab-2-->
+    <filter>
+        <filter-name>YourName</filter-name>
+        <filter-class>com.LiZhihui.Lab2.YourNameFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>YourName</filter-name>
+        <url-pattern>/Lab2/welcome.jsp</url-pattern>
+    </filter-mapping>
 
 </web-app>
