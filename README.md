@@ -168,4 +168,15 @@ Product Details
 ### exercise2
 ![img.png](images/img62.png)
 
+# week14 exercise
+### exercise1
+![](images/img63.png)
+
+![](images/img64.png)
+
+![](images/img65.png)
+
+### exercise2
+
+![](images/img66.png)
 
