@@ -1,3 +1,6 @@
+<%@ page import="com.LiZhihui.model.Order" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="com.LiZhihui.dao.UserDao" %>
 <%@include file="../header.jsp" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
      <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -82,10 +85,10 @@
 								<td>OID:${o.orderId}</td>
 								<td>${o.orderDate}</td>
 								<%
-									com.LiZhihui.model.Order o=(com.LiZhihui.model.Order)pageContext.findAttribute("o");
+									Order o=(Order) pageContext.findAttribute("o");
 									int userId=o.getCustomerId();
-									java.sql.Connection con=(java.sql.Connection)application.getAttribute("con");
-									com.LiZhihui.dao.UserDao userDao=new com.LiZhihui.dao.UserDao();
+									Connection con=(Connection) application.getAttribute("con");
+									UserDao userDao=new UserDao();
 									String customerName=userDao.findById(con, userId).getUsername();
 								%>
 								<td><%=customerName %></td>

@@ -12,7 +12,7 @@ import java.sql.Connection;
 import java.util.List;
 
 @WebServlet(name = "AdminOrderList", value = "/admin/orderList")
-public class OrderList extends HttpServlet {
+public class AdminOrderList extends HttpServlet {
     private Connection con = null;
 
     @Override

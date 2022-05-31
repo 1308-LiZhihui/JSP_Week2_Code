@@ -71,6 +71,7 @@ public class UserDao implements IUserDao{
     public User findById(Connection con, Integer id) throws SQLException {
         String sql = "select * from usertable where id = ?";
         PreparedStatement preparedStatement = con.prepareStatement(sql);
+        preparedStatement.setInt(1,id);
         ResultSet resultSet = preparedStatement.executeQuery();
         User user = new User();
         while(resultSet.next()){
