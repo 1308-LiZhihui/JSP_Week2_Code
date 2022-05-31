@@ -181,6 +181,9 @@ Product Details
 ![](images/img66.png)
 
 # week15 exercise
+### exercise1
+![](images/img67.png)
 
-![img.png](img.png)
+### exercise2
+![](images/img68.png)
 
