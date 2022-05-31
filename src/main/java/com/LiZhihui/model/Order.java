@@ -48,7 +48,6 @@ public class Order implements java.io.Serializable {
 		this.lastName = lastName;
 		this.address1 = address1;
 	}
-
 	/** full constructor */
 	public Order(int customerId, int paymentId,
 			Timestamp orderDate, String firstName, String lastName,
